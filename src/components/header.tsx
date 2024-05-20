@@ -1,5 +1,6 @@
 import Image from "next/image"
-import logo from "../../public/logo.png"
+import logo from "../../public/images/logo.png"
+import Link from "next/link"
 export function Header(){
     return(
         <div className="flex justify-around bg-emerald-500 p-3 shadow fixed top-0 w-full">
@@ -14,9 +15,9 @@ export function Header(){
                 <a href="/"><h1 className="text-2xl font-bold p-1">GreenRewards</h1></a>
             </header>
             <nav className="flex gap-14 items-center">
-                <a href="/nosotros" className="font-bold">Nosotros</a>
-                <a href="/blog" className="font-bold">Blog</a>
-                <a href="/contacto" className="font-bold">Contacto</a>
+                <Link href="/nosotros" className="font-bold">Nosotros</Link>
+                <Link href="/blog" className="font-bold">Blog</Link>
+                <Link href="/contacto" className="font-bold">Contacto</Link>
                 <div className=" bg-emerald-200 p-2 rounded hover:bg-emerald-300">
                     <a href="" className="font-bold">Descarga</a>
                 </div>

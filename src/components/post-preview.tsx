@@ -22,6 +22,7 @@ export default function PostPreview({post} : PostPreviewProps){
                     <p className="text-sm">{post.date}</p>
                     <h3 className="font-bold text-2xl">{post.title}</h3>
                     <p className="text-md">{post.summary}</p>
+                    <p className="text-sm font-bold">By: {post.autor}</p>
                 </div>
             </div>
         </Link>

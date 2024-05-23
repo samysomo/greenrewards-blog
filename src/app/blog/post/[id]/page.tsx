@@ -1,22 +1,23 @@
-import type { Post } from "@/data/posts"
-import { Posts } from "@/data/posts"
+'use client'
 import FullPost from "@/components/full-post"
- type PostPageProps = {
-    id: number
- }
+import { Posts } from "@/data/posts"
+import { useParams } from "next/navigation"
 
-export default function PostPage({id} :PostPageProps){
-    console.log(id)
+export default function PostPage(){
+    const params = useParams()
+    const id = params.id
+    const findPost = Posts.find(post => post.id.toString() === id)
 
-    const findPost = Posts.find(post => post.id === id)
-
-    if (!findPost) {
-        return <div>Post no encontrado</div>;
+    if (!findPost){
+        return <div>No se encontró el post</div>
     }
 
     return(
-        <FullPost
-            post={findPost}
-        />
+        <main className="flex items-center justify-center min-h-screen mt-20">
+            <section className=" w-7/12">
+                <FullPost post={findPost}></FullPost>
+            </section>
+        </main>
+        
     )
 }

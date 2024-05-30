@@ -13,8 +13,8 @@ export default function PostPage(){
     }
 
     return(
-        <main className="flex items-center justify-center min-h-screen mt-20">
-            <section className=" w-7/12">
+        <main className="flex items-center justify-center min-h-screen mt-28">
+            <section className=" w-7/12 bg-gray-100 rounded-lg shadow-lg">
                 <FullPost post={findPost}></FullPost>
             </section>
         </main>

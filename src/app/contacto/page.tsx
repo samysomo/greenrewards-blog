@@ -2,13 +2,9 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <>
-    <Head>
-      <title>Contact Us</title>
-    </Head>
-    <body>
+    <main>
       <section className="flex w-full min-h-screen justify-center items-center">
-        <section className="flex flex-col bg-gray-300 w-full max-w-6xl p-4 rounded-xl shadow-lg text-black">
+        <section className="flex flex-col bg-gray-200 w-full max-w-6xl p-4 rounded-xl shadow-lg text-black">
           <section className="flex flex-col space-y-6 w-full">
             <section className=" flex flex-col">
               <h1 className="font-bold text-3xl tracking-wide text-center">Contáctanos</h1>
@@ -29,9 +25,9 @@ export default function Home() {
                 fill="currentColor"
                 className="size-6">
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   />
                 </svg>
                 <section className="flex flex-col">
@@ -86,13 +82,12 @@ export default function Home() {
                   <label htmlFor="" className="">Mensaje</label>
                   <textarea placeholder="Tu mensaje"  className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2  outline-none focus:ring-2 focus:ring-teal-300"/>
                 </section>
-                <button className="inline-block-style self-end bg-cyan-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm">Enviar</button>
+                <button className="inline-block-style self-end bg-emerald-500 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm">Enviar</button>
               </form>
             </section>
           </section>
         </section>
       </section>
-    </body>
-    </>
+    </main>
   );
 }

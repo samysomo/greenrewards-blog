@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logo from "../../public/images/logo1.png"
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -8,8 +9,8 @@ export default function Home() {
         <h2 className="text-4xl text-center font-bold">Conoce la primera aplicación de acciones <span className="text-emerald-400">sustentables</span> del mundo</h2>
         <p className=" text-md text-center mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio cumque eius soluta voluptatibus est amet sed, quam illum. Neque inventore beatae temporibus voluptatum rem modi facere laudantium magnam porro. Vitae.</p>
         <div className="flex gap-20 items-center justify-center mt-10">
-          <button className=" bg-emerald-500 p-2 w-32 rounded-xl font-bold">Únete a la comunidad</button>
-          <button className=" bg-emerald-300 p-2 w-32 rounded-xl">Más información</button>
+        <Link href={"/login"} className=" bg-emerald-500 border-2 border-emerald-200 rounded-full px-12 py-2 inline-block font-semibold hover:bg-white hover:text-emerald-400">Unete a la Comunidad</Link>
+        <Link href={"/nosotros"} className=" bg-emerald-500 border-2 border-emerald-200 rounded-full px-12 py-2 inline-block font-semibold hover:bg-white hover:text-emerald-400">Más información</Link>
         </div>
         {/* <Image
           src={logo}

@@ -35,21 +35,21 @@ export const Posts : Post[] = [
                 id: 1,
                 date: "22/05/2024",
                 content: "Comentarion de prueba",
-                autor: "Un wey random",
+                autor: "Persona random",
                 autorProfilePicture: "/images/user.png"
             },
             {
                 id: 2,
                 date: "22/05/2024",
                 content: "Comentarion de prueba",
-                autor: "Un wey random",
+                autor: "Persona random",
                 autorProfilePicture: "/images/user.png"
             },
             {
                 id: 3,
                 date: "22/05/2024",
                 content: "Comentarion de prueba",
-                autor: "Un wey random",
+                autor: "Persona random",
                 autorProfilePicture: "/images/user.png"
             },
         ]

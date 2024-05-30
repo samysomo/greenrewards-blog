@@ -18,10 +18,14 @@ export function Header(){
                 <Link href="/nosotros" className="font-bold link-hover">Nosotros</Link>
                 <Link href="/blog" className="font-bold link-hover">Blog</Link>
                 <Link href="/contacto" className="font-bold link-hover">Contacto</Link>
+                
+            </nav>
+            <div className="flex gap-14 items-center">
+                <Link href="/login" className="font-bold link-hover">Login</Link>
                 <div className=" bg-emerald-200 p-2 rounded hover:bg-emerald-300">
                     <a href="" className="font-bold">Descarga</a>
                 </div>
-            </nav>
+            </div>
         </div>
     )
 }

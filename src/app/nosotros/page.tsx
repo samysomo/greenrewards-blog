@@ -1,7 +1,13 @@
+import sam from "../../../public/images/sam.png"
+import lud from "../../../public/images/lud.png"
+import luna from "../../../public/images/luna.png"
+import einar from "../../../public/images/einar.png"
+import Image from "next/image";
+
 export default function Nosotros() {
   return (
-      <main className="min-h-screen flex items-center justify-center bg-gray-100 py-20">
-          <section className="w-7/12 bg-white p-8 rounded-lg shadow-lg">
+      <main className="min-h-screen flex items-center justify-center py-20 mt-8">
+          <section className="w-7/12 bg-gray-100 p-8 rounded-lg shadow-lg">
               <h2 className="text-4xl text-center font-bold mb-4 text-emerald-400">Sobre Nosotros</h2>
               <p className="text-md text-center mt-5 text-gray-700">
                   Bienvenido a nuestro blog. Somos un equipo de estudiantes desarrolladores
@@ -15,24 +21,24 @@ export default function Nosotros() {
                       Creemos en la importancia de la formación continua y en la adaptación
                       a las nuevas tecnologías para ofrecer lo mejor a nuestros usuarios.
                   </p>
-                  <div className="mt-8 flex flex-col items-center">
+                  <div className="mt-10 grid grid-cols-2">
                       <div className="text-center mb-10">
-                          <img src="../../assets/img/sam.png" className="w-32 h-32 rounded-full mx-auto mb-4" />
+                        <Image src={sam} alt="Sam" className="w-36 h-36 rounded-full mx-auto mb-4"/>
                           <p className="text-lg font-medium text-gray-800">Samuel Serrato</p>
                           <p className="text-md text-gray-600">CEO & Fundador</p>
                       </div>
                       <div className="text-center mb-10">
-                          <img src="../../assets/img/sam.png" className="w-32 h-32 rounded-full mx-auto mb-4" />
+                        <Image src={lud} alt="Lud" className="w-36 h-36 rounded-full mx-auto mb-4"/>
                           <p className="text-lg font-medium text-gray-800">Ludwicka Aguirre</p>
                           <p className="text-md text-gray-600">Desarrolladora Principal</p>
                       </div>
                       <div className="text-center mb-10">
-                          <img src="../../assets/img/sam.png" className="w-32 h-32 rounded-full mx-auto mb-4" />
+                        <Image src={luna} alt="Luna" className="w-36 h-36 rounded-full mx-auto mb-4"/>
                           <p className="text-lg font-medium text-gray-800">Diego Luna</p>
                           <p className="text-md text-gray-600">Desarrollador backend</p>
                       </div>
                       <div className="text-center mb-10">
-                          <img src="../../assets/img/sam.png" className="w-32 h-32 rounded-full mx-auto mb-4" />
+                          <Image src={einar} alt="Einar" className="w-36 h-36 rounded-full mx-auto mb-4"/>
                           <p className="text-lg font-medium text-gray-800">Einar Valle</p>
                           <p className="text-md text-gray-600">Desarrollador frontend</p>
                       </div>

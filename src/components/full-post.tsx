@@ -23,11 +23,11 @@ export default function FullPost({post} : FullPostProps){
         if (newCommentContent.trim() === "") return;
     
         const newComment: Comment = {
-          id: post.comments.length + 1, // o usa un mejor método para generar el ID
-          autor: "Test User", // Datos de prueba
-          date: "22/05/2024", // Datos de prueba
+          id: post.comments.length + 1,
+          autor: "Test User",
+          date: "22/05/2024",
           content: newCommentContent,
-          autorProfilePicture: "/images/user.png", // Datos de prueba
+          autorProfilePicture: "/images/user.png", 
         };
     
         addComment(newComment, post.id);
@@ -35,7 +35,7 @@ export default function FullPost({post} : FullPostProps){
       };
 
     return(
-        <div className="flex flex-col gap-10 my-10 p-3">
+        <div className="flex flex-col gap-10 my-5 p-10">
             <Image
                 src={post.image}
                 alt="Post image"

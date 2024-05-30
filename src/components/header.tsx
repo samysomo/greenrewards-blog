@@ -1,6 +1,7 @@
 import Image from "next/image"
 import logo from "../../public/images/logo.png"
 import Link from "next/link"
+import type { User } from "@/data/users"
 export function Header(){
     return(
         <div className="flex justify-around bg-emerald-500 p-3 shadow-xl fixed top-0 w-full">

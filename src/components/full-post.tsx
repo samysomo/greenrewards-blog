@@ -2,13 +2,17 @@ import type { Post } from "@/data/posts";
 import { useState } from "react";
 import Image from "next/image";
 import type { Comment } from "@/data/posts";
+import type { User } from "@/data/users";
 import { Posts } from "@/data/posts";
+import { useRouter } from "next/navigation";
 
 type FullPostProps = {
-    post : Post
+    post : Post,
+    user : User | null
 }
-export default function FullPost({post} : FullPostProps){
+export default function FullPost({post, user} : FullPostProps){
     const [newCommentContent, setNewCommentContent] = useState<string>("")
+    const router = useRouter()
 
     const addComment = (comment : Comment, postID: number) =>{
         const findPost = Posts.find(post => post.id === postID)
@@ -20,19 +24,24 @@ export default function FullPost({post} : FullPostProps){
     }
 
     const handleAddComment = () => {
-        if (newCommentContent.trim() === "") return;
+        if (user){
+            if (newCommentContent.trim() === "") return;
     
-        const newComment: Comment = {
-          id: post.comments.length + 1,
-          autor: "Test User",
-          date: "22/05/2024",
-          content: newCommentContent,
-          autorProfilePicture: "/images/user.png", 
-        };
-    
-        addComment(newComment, post.id);
-        setNewCommentContent(''); // Limpiar el campo de entrada después de agregar el comentario
-      };
+            const newComment: Comment = {
+            id: post.comments.length + 1,
+            autor: user.nombre,
+            date: "30/05/2024",
+            content: newCommentContent,
+            autorProfilePicture: "/images/user.png", 
+            };
+        
+            addComment(newComment, post.id);
+            setNewCommentContent(''); 
+      } else {
+        router.push("/login")
+      }
+    }
+        
 
     return(
         <div className="flex flex-col gap-10 my-5 p-10">

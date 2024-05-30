@@ -23,22 +23,22 @@ export default function Nosotros() {
                   </p>
                   <div className="mt-10 grid grid-cols-2">
                       <div className="text-center mb-10">
-                        <Image src={sam} alt="Sam" className="w-36 h-36 rounded-full mx-auto mb-4"/>
+                        <Image src={"https://greenrewardsbucket.s3.amazonaws.com/sam.png"} alt="Sam" className=" rounded-full mx-auto mb-4" width={180} height={180}/>
                           <p className="text-lg font-medium text-gray-800">Samuel Serrato</p>
                           <p className="text-md text-gray-600">CEO & Fundador</p>
                       </div>
                       <div className="text-center mb-10">
-                        <Image src={lud} alt="Lud" className="w-36 h-36 rounded-full mx-auto mb-4"/>
+                        <Image src={"https://greenrewardsbucket.s3.amazonaws.com/lud.png"} alt="Lud" className=" rounded-full mx-auto mb-4" width={180} height={180}/>
                           <p className="text-lg font-medium text-gray-800">Ludwicka Aguirre</p>
                           <p className="text-md text-gray-600">Desarrolladora Principal</p>
                       </div>
                       <div className="text-center mb-10">
-                        <Image src={luna} alt="Luna" className="w-36 h-36 rounded-full mx-auto mb-4"/>
+                        <Image src={"https://greenrewardsbucket.s3.amazonaws.com/luna.png"} alt="Luna" className=" rounded-full mx-auto mb-4" width={180} height={180}/>
                           <p className="text-lg font-medium text-gray-800">Diego Luna</p>
                           <p className="text-md text-gray-600">Desarrollador backend</p>
                       </div>
                       <div className="text-center mb-10">
-                          <Image src={einar} alt="Einar" className="w-36 h-36 rounded-full mx-auto mb-4"/>
+                          <Image src={"https://greenrewardsbucket.s3.amazonaws.com/einar.png"} alt="Einar" className=" rounded-full mx-auto mb-4" width={180} height={180}/>
                           <p className="text-lg font-medium text-gray-800">Einar Valle</p>
                           <p className="text-md text-gray-600">Desarrollador frontend</p>
                       </div>
